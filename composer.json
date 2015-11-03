@@ -27,6 +27,7 @@
     }
   },
   "extra": {
+    "bootstrap": "ijackua\\gon\\GonBootstrap",
     "branch-alias": {
       "dev-master": "1.0-dev"
     }
