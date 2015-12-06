@@ -1,4 +1,4 @@
-# yii2-gon (WORK IN PROGRESS!)
+# yii2-gon
 
 [![Latest Version on Packagist][ico-version]][link-packagist]
 [![Software License][ico-license]](LICENSE.md)
@@ -21,7 +21,15 @@ Add component to application config
     'gon' => 'ijackua\gon\GonComponent'
 ),
 ```
-Full configuration example
+And to app `bootstrap` section
+```
+$config = array(
+    'bootstrap' => array('gon'),
+    ...
+```
+
+
+Full component configuration example
 ```
 'components' => array(
        'gon' => array(
@@ -58,7 +66,6 @@ On JS side you will get
 
 ## TODO
 
-* Add gon.global persistent vars from config
 * Make optional non-global usage. AMD, CommonJS modules.
 
 ## Change log
