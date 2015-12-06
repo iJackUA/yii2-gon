@@ -82,7 +82,7 @@ class GonComponent extends Component
 
     public function registerJs()
     {
-        if ($this->dataExists() && !$this->showEmptyVar) {
+        if ($this->dataExists() || $this->showEmptyVar) {
             \Yii::$app->view->registerJs($this->gonScriptWrapped(), View::POS_HEAD);
         }
     }
