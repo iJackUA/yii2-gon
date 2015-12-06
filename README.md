@@ -15,14 +15,45 @@ $ composer require ijackua/gon
 ```
 
 ## Configure
-
+Add component to application config
+```
+'components' => array(
+    'gon' => 'ijackua\gon\GonComponent'
+),
+```
+Full configuration example
+```
+'components' => array(
+       'gon' => array(
+            'class' => 'ijackua\gon\GonComponent',
+            'jsVariableName' => 'gon',
+            'globalData' => ['g1' => 1, 'g2' => '2'],
+            'showEmptyVar' => true,
+        )
+),
+```
 
 
 
 ## Usage
 
+Anywhere in your app `push` key -> value
 
+```
+\Yii::$app->gon->push('someObj', ['a'=>'b']);
+\Yii::$app->gon->push('str', 'hello');
+```
 
+On JS side you will get
+```
+> window.gon
+>> Object
+      someObj: Object
+         {
+           a: "b"
+         }
+      str: "hello"
+```
 
 
 ## TODO

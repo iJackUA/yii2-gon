@@ -7,8 +7,25 @@ use yii\web\View;
 
 class GonComponent extends Component
 {
-
+    /**
+     * Global JS variable name 'window.'
+     *
+     * @var string
+     */
     public $jsVariableName = 'gon';
+    /**
+     * Array with global accessible data for each request
+     *
+     * @var array
+     */
+    public $globalData = [];
+    /**
+     * Show or hide 'window.gon' if there is no data pushed
+     *
+     * @var bool
+     */
+    public $showEmptyVar = true;
+
 
     protected $data = [];
 
@@ -33,7 +50,7 @@ class GonComponent extends Component
 
     public function allVariables()
     {
-        return $this->data;
+        return array_merge($this->globalData, $this->data);
     }
 
     public function clear()
@@ -65,7 +82,7 @@ class GonComponent extends Component
 
     public function registerJs()
     {
-        if ($this->dataExists()) {
+        if ($this->dataExists() && !$this->showEmptyVar) {
             \Yii::$app->view->registerJs($this->gonScriptWrapped(), View::POS_HEAD);
         }
     }
