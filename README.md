@@ -10,19 +10,19 @@ Push data from PHP controller to global JS variable (inspired by https://github.
 
 Via Composer
 
-``` bash
+```bash
 $ composer require ijackua/gon
 ```
 
 ## Configure
 Add component to application config
-```
+```php
 'components' => array(
     'gon' => 'ijackua\gon\GonComponent'
 ),
 ```
 And to app `bootstrap` section
-```
+```php
 $config = array(
     'bootstrap' => array('gon'),
     ...
@@ -30,7 +30,7 @@ $config = array(
 
 
 Full component configuration example
-```
+```php
 'components' => array(
        'gon' => array(
             'class' => 'ijackua\gon\GonComponent',
@@ -47,13 +47,13 @@ Full component configuration example
 
 Anywhere in your app `push` key -> value
 
-```
+```php
 \Yii::$app->gon->push('someObj', ['a'=>'b']);
 \Yii::$app->gon->push('str', 'hello');
 ```
 
 On JS side you will get
-```
+```js
 > window.gon
 >> Object
       someObj: Object
