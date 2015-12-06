@@ -14,9 +14,16 @@ Via Composer
 $ composer require ijackua/gon
 ```
 
+## Configure
+
+
+
+
 ## Usage
 
-TBD
+
+
+
 
 ## TODO
 

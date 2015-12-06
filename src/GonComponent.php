@@ -12,6 +12,14 @@ class GonComponent extends Component
 
     protected $data = [];
 
+    public function init()
+    {
+        parent::init();
+        \Yii::$app->view->on(View::EVENT_BEFORE_RENDER, function () {
+            $this->registerJs();
+        });
+    }
+
     /**
      * Push key => value from PHP to JS
      *
