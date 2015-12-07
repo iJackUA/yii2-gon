@@ -11,7 +11,7 @@ Push data from PHP controller to global JS variable (inspired by https://github.
 Via Composer
 
 ```bash
-$ composer require ijackua/gon
+$ composer require ijackua/yii2-gon
 ```
 
 ## Configure
@@ -89,7 +89,7 @@ The MIT License (MIT). Please see [License File](LICENSE.md) for more informatio
 [ico-license]: https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square
 [ico-downloads]: https://img.shields.io/packagist/dt/ijackua/gon.svg?style=flat-square
 
-[link-packagist]: https://packagist.org/packages/ijackua/gon
-[link-downloads]: https://packagist.org/packages/ijackua/gon
+[link-packagist]: https://packagist.org/packages/ijackua/yii2-gon
+[link-downloads]: https://packagist.org/packages/ijackua/yii2-gon
 [link-author]: https://github.com/iJackUA
 [link-contributors]: ../../contributors
