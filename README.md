@@ -85,9 +85,9 @@ Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
 
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
 
-[ico-version]: https://img.shields.io/packagist/v/ijackua/gon.svg?style=flat-square
+[ico-version]: https://img.shields.io/packagist/v/ijackua/yii2-gon.svg?style=flat-square
 [ico-license]: https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square
-[ico-downloads]: https://img.shields.io/packagist/dt/ijackua/gon.svg?style=flat-square
+[ico-downloads]: https://img.shields.io/packagist/dt/ijackua/yii2-gon.svg?style=flat-square
 
 [link-packagist]: https://packagist.org/packages/ijackua/yii2-gon
 [link-downloads]: https://packagist.org/packages/ijackua/yii2-gon
